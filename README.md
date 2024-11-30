@@ -1,6 +1,6 @@
 # Angular Exercises Collection  
 
-This repository contains a series of practical exercises designed to help learn and master Angular concepts. Each exercise focuses on a specific feature or use case in Angular, providing hands-on experience for developers of all levels.  
+This repository contains a series of practical exercises designed to help learning and mastering Angular concepts. Each exercise focuses on a specific feature or use case in Angular, providing hands-on experience for developers of all levels.  
 
 ## Table of Contents  
 
