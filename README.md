@@ -1,11 +1,13 @@
-# TP1-Angular
+# Angular Exercises Collection  
 
-## Overview
+This repository contains a series of practical exercises designed to help learning and mastering Angular concepts. Each exercise focuses on a specific feature or use case in Angular, providing hands-on experience for developers of all levels.  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0. It is intended for practicing Angular development.
+## Table of Contents  
 
-## Prerequisites
-
-- Node.js
-- Angular CLI
-
+1. [Color Changer](#color-changer)  
+2. [Business Card Preview](#business-card-preview)  
+3. [Parent-Child Communication](#parent-child-communication)  
+4. [Mini Recruitment Platform](#mini-recruitment-platform)  
+5. [Directive for Rainbow Typing](#directive-for-rainbow-typing)  
+6. [Mini Word Processor](#mini-word-processor)  
+---
