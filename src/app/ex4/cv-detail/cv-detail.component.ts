@@ -7,7 +7,7 @@ import { EmbaucheService } from 'src/app/services/embauche-service.service';
 import { RoutesConfig } from 'src/app/config/routes.config';
 
 @Component({
-  selector: 'app-cd-detail',
+  selector: 'app-cv-detail',
   templateUrl: './cv-detail.component.html',
   styleUrls: ['./cv-detail.component.css']
 })
@@ -24,7 +24,7 @@ export class CvDetailComponent {
     const id = this.acr.snapshot.params['id'];
     this.cv = this.cvService.getCvById(id);
     if (!this.cv)
-      this.router.navigate([RoutesConfig.EX4]);  // Use RoutesConfig.EX4 for cv route
+      this.router.navigate([RoutesConfig.EX4]);
   }
 
   deleteCv() {
@@ -33,7 +33,7 @@ export class CvDetailComponent {
         next: (response) => {
           console.log('CV deleted from API', response);
           this.embaucheService.deleteCv(this.cv!);
-          this.router.navigate([RoutesConfig.EX4]);  // Use RoutesConfig.EX4 for cv route
+          this.router.navigate([RoutesConfig.EX4]);
         },
         error: (error) => {
           console.error('Error deleting CV from API', error);
@@ -41,7 +41,7 @@ export class CvDetailComponent {
 
           if (this.cvService.deleteCv(this.cv!)) {
             this.embaucheService.deleteCv(this.cv!);
-            this.router.navigate([RoutesConfig.EX4]);  // Use RoutesConfig.EX4 for cv route
+            this.router.navigate([RoutesConfig.EX4]);
           } else {
             this.toastr.error('Error: CV not found in local data.');
           }

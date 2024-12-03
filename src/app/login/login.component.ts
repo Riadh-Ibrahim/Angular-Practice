@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-login(loginForm: { value: any; }) {
-  alert(loginForm.value);
-}
+  login(loginForm: { value: { email: string; password: string }; }) {
+    const email = loginForm.value.email;
+    const password = loginForm.value.password;
+    alert(`Email: ${email}\nMot de passe: ${password}`);
+  }
 }

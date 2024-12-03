@@ -1,21 +1,21 @@
 <div class="container mt-5">
 
 <form #loginForm="ngForm">
-    <label for="email"> email :</label>
+    <label for="email"> Email :</label>
     <input email 
         required 
-        ngModel
         type="text" 
-        ngModel name="email"
+        ngModel 
+        name="email"
         class="form-control"
         id="email"
         #email="ngModel">
         
-        <div class="alert alert-danger" *ngIf="!email.valid && email.touched">
-            l'email n'est pas valide
+        <div class="alert alert-danger" *ngIf="email.invalid && email.touched">
+            L'email n'est pas valide
         </div>
     
-    <label for="password"> password :</label>
+    <label for="password"> Password :</label>
     <input password 
         required 
         ngModel
@@ -26,11 +26,8 @@
         id="password"
         #password="ngModel">
 
-
-
-
-    <div class="alert alert-danger" *ngIf="!password.valid && password.touched">
-        le password doit contenir au moins 4 caractères
+    <div class="alert alert-danger" *ngIf="password.invalid && password.touched">
+        Le mot de passe doit contenir au moins 4 caractères
     </div>
     <button [disabled]="loginForm.invalid" class="btn btn-primary" (click)="login(loginForm)"> Login </button>
 </form>

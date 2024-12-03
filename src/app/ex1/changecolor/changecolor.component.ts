@@ -7,23 +7,18 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./changecolor.component.css']
 })
 export class ChangecolorComponent {
-
-
   constructor(
     private route: ActivatedRoute,
     private router: Router
   ) { }
-
-  
   
     currentColor: string = 'red';
-  
     
     onColorChange(color: string): void {
       this.currentColor = color;
     }
   
-  
+
     resetColor(): void {
       this.currentColor = 'red';
     }

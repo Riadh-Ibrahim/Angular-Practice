@@ -1,1 +1,4 @@
-<img src="assets/images/{{currentImage}}" alt="{{currentImage}}">
+<img 
+  [src]="'assets/images/' + currentImage" 
+  [alt]="currentImage"
+  [ngClass]="{ 'small-image': currentImage === 'Riadh.jpg' }">

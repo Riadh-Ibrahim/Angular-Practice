@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import {Cv} from "../cv";
-import {ToastrService} from "ngx-toastr";
+import { Cv } from "../cv";
 
 @Component({
   selector: 'app-liste',
@@ -8,14 +7,5 @@ import {ToastrService} from "ngx-toastr";
   styleUrls: ['./liste.component.css']
 })
 export class ListeComponent  {
-  //@Output() showCV = new EventEmitter<Cv>()
   @Input() cvs : Cv[] = [];
-
-
-
-
-
-  //cvSelected(cv:Cv){
-    //this.showCV.emit(cv);
-  //}
 }

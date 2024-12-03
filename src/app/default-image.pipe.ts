@@ -8,6 +8,9 @@ export class DefaultImagePipe implements PipeTransform {
     if (!value || value.trim() === '') {
       return 'assets/images/tim_logo.png';
     }
+    if (value==='as.jpg'){
+      return 'assets/images/Riadh.jpg';
+    }
     return value;
   }
 }

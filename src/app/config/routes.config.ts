@@ -6,7 +6,6 @@ import { PereComponent } from '../ex3/pere/pere.component';
 import { CvComponent } from '../ex4/cv/cv.component';
 import { MiniwordComponent } from '../ex5/miniword/miniword.component';
 import { RainbowComponent } from '../ex6/rainbow/rainbow.component';
-import { DetailComponent } from '../ex4/detail/detail.component';
 import { CvDetailComponent } from '../ex4/cv-detail/cv-detail.component';
 import { LoginComponent } from '../login/login.component';
 import { ImagesComponent } from '../images/images.component';

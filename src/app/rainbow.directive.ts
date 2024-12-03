@@ -1,11 +1,10 @@
 import { Directive, HostBinding, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appRainbow]'
+  selector: 'input[appRainbow][type=text]'
 })
 export class RainbowDirective {
   colors: string[] = ['orchid', 'blue', 'red', 'green', 'orange', 'violet','yellow'];
-
 
   constructor() { }
 

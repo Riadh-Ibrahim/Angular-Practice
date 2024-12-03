@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import {Cv} from "../cv";
 import { EmbaucheService } from 'src/app/services/embauche-service.service';
-import {ToastrService} from "ngx-toastr";
-import { trigger, state, style, transition, animate } from '@angular/animations';
+
 @Component({
   selector: 'app-embauche',
   templateUrl: './embauche.component.html',

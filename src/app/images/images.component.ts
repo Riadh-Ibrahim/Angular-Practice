@@ -7,9 +7,10 @@ import { Observable, of} from 'rxjs';
   styleUrls: ['./images.component.css']
 })
 export class ImagesComponent implements OnInit {
-  imageObservable: Observable<string>=of('');
+  imageObservable!: Observable<string>;
     
     listeImages = [ 
+      'Riadh.jpg', 
       'rotating_card_profile.png', 
       'rotating_card_profile2.png',
       'rotating_card_profile3.png'];

@@ -30,7 +30,5 @@ export class EmbaucheService {
     this.listeEmbacuhes = this.listeEmbacuhes.filter(item => item.id !== cv.id);
     return this.listeEmbacuhes.length < originalLength;
   }
-
-
 }
 
